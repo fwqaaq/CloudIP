@@ -1,0 +1,20 @@
+{
+  "imports": {
+    "std/": "https://deno.land/std@0.190.0/",
+    "cheerio": "https://esm.sh/cheerio"
+  },
+  "lint": {
+    "include": ["index.js"]
+  },
+  "fmt": {
+    "useTabs": true,
+    "indentWidth": 2,
+    "lineWidth": 80,
+    "semiColons": false,
+    "singleQuote": true,
+    "include": ["index.js"]
+  },
+  "tasks": {
+    "dev": "deno run --allow-write --allow-net index.js"
+  }
+}
