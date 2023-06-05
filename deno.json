@@ -1,7 +1,7 @@
 {
   "imports": {
     "std/": "https://deno.land/std@0.190.0/",
-    "cheerio": "https://esm.sh/cheerio"
+    "cheerio": "https://esm.sh/cheerio@0.22.0"
   },
   "lint": {
     "include": ["index.js"]

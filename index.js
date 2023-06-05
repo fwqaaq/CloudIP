@@ -48,16 +48,24 @@ async function getAlibabaJson() {
   return alibaba
 }
 
+async function getCloudFlare() {
+  const res = await fetch("https://www.cloudflare.com/ips-v4")
+  const cloudFlare = await res.text()
+  return cloudFlare.split("\n")
+}
+
 const { default: { values: azure } } = await getAzureJson()
 const alibaba = await getAlibabaJson()
 const digO = await parseDigitalOcean()
+const cloudflare = await getCloudFlare()
 
 const server = {
   aws: [],
   google: [],
   azure: [],
   digitalOcean: [],
-  alibaba: alibaba
+  alibaba,
+  cloudflare,
 }
 
 google.prefixes.forEach(
