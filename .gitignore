@@ -2,3 +2,6 @@ all.json
 aws.txt
 azure.txt
 google.txt
+digitalOcean.txt
+deno.lock
+alibaba.txt
